@@ -115,7 +115,7 @@
       <aside class="hero-card" aria-label="Formulário de avaliação">
         <h2 style="margin:0 0 6px;font-size:20px;color:#fff">Avaliação gratuita do seu caso</h2>
         <p class="muted" style="margin:0 0 10px;color:#cbd5e1">Retornamos com a viabilidade e possíveis valores de indenização.</p>
-        <form aria-label="Formulário de triagem" onsubmit="alert('Exemplo de envio. Conecte a seu backend.');return false;">
+        <form action="send.php" method="POST" aria-label="Formulário de triagem">
           <label>Nome<br/><input required name="nome" /></label>
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px">
             <label>Data do voo<br/><input required type="date" name="data" /></label>
@@ -200,7 +200,9 @@
   <section id="sobre" aria-labelledby="sobre-h2">
     <div class="wrap cols">
       <div class="card">
-        <h2 id="sobre-h2" class="section-title" style="text-align:left">Nelson Tanuma • OAB/UF XXXXX</h2>
+        <h2 id="sobre-h2" class="section-title" style="text-align:left">Matheus da Silva Feitosa  • OAB/SP 500.884</h2>
+      
+        <!-- <h2 id="sobre-h2" class="section-title" style="text-align:left">Nelson Ytsuo Tanuma  • OAB-SP 128.379</h2> -->
         <p>Advogado dedicado ao <strong>Direito do Consumidor e do Passageiro Aéreo</strong>, com experiência em ações contra companhias aéreas e acordos eficientes. Atendimento <strong>100% digital</strong>, linguagem objetiva e foco em resultado.</p>
         <ul class="muted">
           <li>Atendimento humanizado do primeiro contato ao pagamento.</li>
@@ -208,14 +210,34 @@
           <li>Atuação em todo o Brasil.</li>
         </ul>
         <div class="cta">
-          <a class="btn" href="https://wa.me/55XXXXXXXXXXX?text=Ol%C3%A1,%20gostaria%20de%20conversar%20com%20o%20Dr.%20Nelson%20Tanuma" target="_blank" rel="nofollow noopener">Falar com o Dr. Nelson</a>
+          <a class="btn" href="https://wa.me/55XXXXXXXXXXX?text=Ol%C3%A1,%20gostaria%20de%20conversar%20com%20o%20Dr.%20Nelson%20Tanuma" target="_blank" rel="nofollow noopener">💬 Falar com o Dr. Matheus</a>
         </div>
       </div>
       <aside class="card" aria-label="Foto do escritório">
-        <img class="img-cover" src="" alt="Profissional em escritório" style="height:100%"/>
+        <img class="img-cover" src="matheus.png" alt="Profissional em escritório" style="height:100%"/>
       </aside>
     </div>
   </section>
+
+<section id="sobre" class="section" style="background:#f9fafb">
+  <div class="wrap cols">
+    <aside class="card" aria-label="Foto do advogado">
+      <img class="img-cover" src="nelson.png" alt="Dr. Nelson Ytsuo Tanuma – Advogado de Direito Aéreo" style="height:100%" />
+    </aside>
+    <div class="card">
+      <h2 class="section-title" style="text-align:left; color:#1e3a8a">Nelson Ytsuo Tanuma<br><span style="font-size: 18px; color: #4b5563;">OAB/SP 128.379</span></h2>
+      <p style="margin-top:12px">Com vasta experiência em <strong>Direito do Consumidor e do Passageiro Aéreo</strong>, o Dr. Nelson atua com excelência em ações contra companhias aéreas e construção de acordos eficientes. Atendimento digital, linguagem clara e atuação estratégica fazem parte de sua essência profissional.</p>
+      <ul class="muted" style="margin-top:12px">
+        <li>Atendimento humanizado e direto com o advogado</li>
+        <li>Agilidade com assinatura eletrônica e acompanhamento contínuo</li>
+        <li>Atuação em todo o território nacional</li>
+      </ul>
+      <div class="cta" style="margin-top:16px">
+        <a class="btn" href="https://wa.me/5511999999999?text=Olá,%20gostaria%20de%20falar%20com%20o%20Dr.%20Nelson%20Tanuma%20sobre%20meu%20caso" target="_blank" rel="nofollow noopener">💬 Falar com o Dr. Nelson</a>
+      </div>
+    </div>
+  </div>
+</section>
 
   <!-- HONORÁRIOS -->
   <section id="honorarios" aria-label="Condição de honorários" style="background:#f8fafc">
@@ -266,11 +288,11 @@
         <h2 class="section-title" style="text-align:left">Fale Conosco</h2>
         <p class="muted">Clique no botão para ir direto ao WhatsApp. Atendimento imediato.</p>
         <ul class="muted" style="list-style:none;padding-left:0">
-          <li>📞 (11) 99999-9999</li>
+          <li>📞 (11) 92202-7153</li>
           <li>✉️ contato@nelsontanuma.com.br</li>
           <li>🌐 Atendimento em todo o Brasil</li>
         </ul>
-        <a class="btn" href="https://wa.me/55XXXXXXXXXXX" target="_blank">Fale agora com um advogado</a>
+        <a class="btn" href="https://wa.me/5511922027153" target="_blank">Fale agora com um advogado</a>
       </div>
       <div class="card">
         <img class="img-cover" src="atendimento.webp" alt="Aeronave taxiando na pista" style="height:100%"/>
@@ -281,12 +303,12 @@
   <footer class="wrap " aria-label="Rodapé">
     <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center">
       <span>© <span id="y"></span> Nelson Tanuma – Advocacia. Todos os direitos reservados.</span>
-      <span class="muted">OAB/UF XXXXX • CNPJ XX.XXX.XXX/0001-XX</span>
+      <span class="muted">Feito com ❤ por <a href="https://rsweb.com.br" TARGET="_BLANK">RS Solutions</a></span>
     </div>
   </footer>
   
   
-  <div class="phone-call cbh-phone cbh-green cbh-show  cbh-static" id="clbh_phone_div" style=""><a id="WhatsApp-button" href="https://wa.me/5511934927179" target="_blank" class="phoneJs" title=""><div class="cbh-ph-circle"></div><div class="cbh-ph-circle-fill"></div><div class="cbh-ph-img-circle1"></div></a></div>
+  <div class="phone-call cbh-phone cbh-green cbh-show  cbh-static" id="clbh_phone_div" style=""><a id="WhatsApp-button" href="https://wa.me/5511922027153" target="_blank" class="phoneJs" title=""><div class="cbh-ph-circle"></div><div class="cbh-ph-circle-fill"></div><div class="cbh-ph-img-circle1"></div></a></div>
 
 
 
